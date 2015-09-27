@@ -1,0 +1,13 @@
+{
+  "resourceType": "demo/components/page/todo",
+  "title": "Sling Handlebars",
+  "header": {
+    "json": "modules/header/header"
+  },
+  "todo": {
+    "json": "modules/todo/todo2"
+  },
+  "footer": {
+    "json": "modules/footer/footer"
+  }
+}

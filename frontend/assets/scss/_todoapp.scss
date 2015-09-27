@@ -1,0 +1,101 @@
+body {
+  @include prefixer(font-smoothing, antialiased, webkit moz spec);
+
+  background: $grey-light;
+  color: $black;
+  font: 14px 'Helvetica Neue', Helvetica, Arial, sans-serif;
+  font-weight: 300;
+  line-height: 1.4em;
+  margin: 0 auto;
+  max-width: 550px;
+  min-width: 230px;
+}
+
+[type="checkbox"] {
+  outline: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.todoapp {
+  background: $white;
+  box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .2),
+    0 25px 50px 0 rgba(0, 0, 0, .1);
+  margin: 130px 0 40px;
+  position: relative;
+}
+
+input {
+  @include placeholder {
+    color: $grey-light-medium;
+    font-style: italic;
+    font-weight: 300;
+  }
+}
+
+.filters {
+  left: 0;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  right: 0;
+
+  li {
+    display: inline;
+
+    a {
+      border: 1px solid transparent;
+      border-radius: 3px;
+      color: inherit;
+      margin: 3px;
+      padding: 3px 7px;
+      text-decoration: none;
+
+      &:hover {
+        border-color: rgba(175, 47, 47, .1);
+      }
+
+      &.selected {
+        border-color: rgba(175, 47, 47, .2);
+      }
+    }
+  }
+}
+
+.clear-completed,
+html .clear-completed:active {
+  cursor: pointer;
+  float: right;
+  line-height: 20px;
+  position: relative;
+  text-decoration: none;
+}
+
+.clear-completed {
+  @include appearance(none);
+  @include prefixer(font-smoothing, antialiased, webkit moz spec);
+
+  background: none;
+  border: 0;
+  color: inherit;
+  font-family: inherit;
+  font-size: 100%;
+  font-weight: inherit;
+  margin: 0;
+  outline: none;
+  padding: 0;
+  vertical-align: baseline;
+}
+
+.clear-completed:hover {
+  text-decoration: underline;
+}
+
+@media (max-width: 430px) {
+  .filters {
+    bottom: 10px;
+  }
+}

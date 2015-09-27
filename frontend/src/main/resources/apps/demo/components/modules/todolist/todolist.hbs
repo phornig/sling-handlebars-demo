@@ -1,0 +1,8 @@
+{{include this resourceType="demo/components/modules/todo" replaceSelectors="new"}}
+<ul class="todolist">
+    {{#each todos}}
+        <li>
+            {{include @../root path=this resourceType="demo/components/modules/todo"}}
+        </li>
+    {{/each}}
+</ul>

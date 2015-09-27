@@ -1,0 +1,14 @@
+.header {
+  &__title {
+    @include prefixer(text-rendering, optimizeLegibility, moz spec);
+
+    color: $red-light;
+    font-size: 100px;
+    font-weight: 100;
+    margin: .83em 0;
+    position: absolute;
+    text-align: center;
+    top: -155px;
+    width: 100%;
+  }
+}

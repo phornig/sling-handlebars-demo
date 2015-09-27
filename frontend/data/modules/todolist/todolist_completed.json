@@ -1,0 +1,6 @@
+{
+  "todos": ["todo1"],
+  "todo1": {
+    "json": "modules/todo/todo1"
+  }
+}

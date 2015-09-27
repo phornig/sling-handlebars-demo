@@ -1,0 +1,15 @@
+.todolist {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+
+  li {
+    border-bottom: 1px solid $grey-light-medium;
+    font-size: 24px;
+    position: relative;
+
+    &:last-child {
+      border-bottom: 0;
+    }
+  }
+}
